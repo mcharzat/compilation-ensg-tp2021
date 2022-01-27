@@ -1,6 +1,6 @@
 # compilation-ensg-devoir-2021
 
-*NB: Pour toute reponse nécéssitant un schema, vous pouvez utiliser sketchpad (https://sketch.io/sketchpad/) télécharger le résultat au format pdf et me le joindre à votre réponse.*
+**NB: Pour toute reponse nécéssitant un schema, vous pouvez utiliser sketchpad (https://sketch.io/sketchpad/) télécharger le résultat au format pdf et me le joindre à votre réponse.**
 
 
 1 - Quel formalisme doit on aux auteurs John Backus et Peter Naurr ? Et à quoi sert-il ?
