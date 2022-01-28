@@ -12,11 +12,12 @@ langage.
 2 - Donnez la grammaire capable de lire la syntaxe bien parenthésée suivante :
 `[[{}([{}]){{}}]]`
 
+``` go
 E -> C | A | P | €
 C -> [E]
 A -> {E}
 P -> (E)
-
+```
 
 3 - Donnez la grammaire (lexer et parser) capable de comprendre du XML
 exemple :
@@ -62,7 +63,8 @@ Parce que A et M n'ont pas de règle d'arrêt.
 
 7 - Dessinez l'AST correspondant à la formule suivante, avec le respect de la précédence des opérateurs : 
   - `(1 + 1) * 2 * (3 + 4) - 5`
-
+ 
+ ```
 		(-)
 	       /   \
 	     (*)    (5)
@@ -72,7 +74,7 @@ Parce que A et M n'ont pas de règle d'arrêt.
       (+) (2) (3)  (4)
      /  \
    (1)  (1)
-
+```
 
 8 - A partir du premier AST, schematisez ce qu'il se passe dans la pile d'exécution lors de sa resolution
 (vous devez dessiner une pile pour chaque étape en précisant les operations effectuées si nécéssaire) **(2 points)**
@@ -143,10 +145,10 @@ On ne peut donc pas les rencontrer dans un même langage.
 5 + 7 * 2 * ( 1 + 1 ) / 4
 1 + 2 * 7 + ( 2 * 2 ) + 7
 ```
-
+``` go
 ( + 5 ( * 7 ( * 2 ( / ( + 1 1 ) 4 ) ) ) ) )
 ( + 1 ( + ( + ( * 2 7 ) ( * 2 2 ) ) 7 ) )  
-
+```
 
 17 - Comme le ferait un analyseur sémantique, optimisez le programme suivant :
 ``` go
