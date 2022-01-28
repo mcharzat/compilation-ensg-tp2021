@@ -29,21 +29,21 @@ exemple :
   </persons>
 </xml>
 ```
-
+```
 balise = '<' {'/'} [a-z] {[a-z] {' ' keyValue} } {'/'} '>'
 keyValue = attribut '=' value
 value = '"' [a-zA-Z] {[a-zA-Z]} '"'
 attribut =  [a-z] {[a-zA-Z]}
-
+```
 
 4 - Transformez la grammaire suivante afin de résoudre le problème de la recursivité à gauche. **(2 points)**
 ``` go
 E -> E '*' E | E '/' E | '-' E | n | €
 ```
-
+``` go
 E -> nF | '-' nF | €
 F -> '*' E | '/' E
-
+```
 
 5 - La grammaire `E -> E '||' E | E | €` est-elle acceptable pour un parseur **LR** ? Pourquoi ?
 
@@ -78,7 +78,7 @@ Parce que A et M n'ont pas de règle d'arrêt.
 
 8 - A partir du premier AST, schematisez ce qu'il se passe dans la pile d'exécution lors de sa resolution
 (vous devez dessiner une pile pour chaque étape en précisant les operations effectuées si nécéssaire) **(2 points)**
-
+```
 []
 [1] push 1
 [1 1] push 1
@@ -91,7 +91,7 @@ Parce que A et M n'ont pas de règle d'arrêt.
 [28] multi
 [28 5] push 5
 [23] substrack
-
+```
 
 9 - Dans une machine à pile, à l'aide des operations PUSH n, ADD et MULT écrivez un pseudo programme machine qui correspond à la formule de la question 7 : 
 
